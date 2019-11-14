@@ -1,0 +1,32 @@
+<div>
+    <h1 class="h2"> Lista de productos</h1>
+  </div>
+  <div>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Codigo</th>
+          <th>Laboratorio</th>
+          <th>Cantidad</th>
+          <th>Precio</th>
+          <th>Clasificacion</th>
+          <th>Fecha de vencimiento</th>
+        </tr>
+
+      </thead>
+      <tr *ngFor="let task of productos">
+        <td>{{producto.nombre}}</td>
+        <td>{{producto.codigo}}</td>
+        <td>{{producto.laboratorio}}</td>
+        <td>{{producto.cantidad}}</td>
+        <td>{{producto.precio}}</td>
+        <td>{{producto.clasificacion}}</td>
+        <td>{{producto.fechadevencimiento}}</td>
+      </tr>
+    </table>
+
+    <div class="form-group">
+        <button class="btn btn-primary">Eliminar</button> <button class="btn btn-primary">Modificar</button> <button class="btn btn-primary">Consulta individual</button>
+      </div>
+  </div>

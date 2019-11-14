@@ -1,0 +1,53 @@
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Agregar Producto </h1>
+  </div>
+  <p>Rellene los campos</p>
+  <div class="form-group">
+      <label>Nombre:
+        <input [(ngModel)]="producto.nombre" class="form-control" placeholder="digite nombre" type="text" />
+      </label>
+    </div>
+  
+  <div class="form-group">
+    <label>Codigo:
+      <input [(ngModel)]="producto.codigo" class="form-control" placeholder="digite codigo" type="number" />
+    </label>
+  </div>
+  
+  <div class="form-group">
+    <label>Laboratorio:
+      <input [(ngModel)]="producto.laboratorio" class="form-control" placeholder="digite laboratorio" type="text" />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Cantidad:
+      <input [(ngModel)]="producto.cantidad" class="form-control" placeholder="digite cantidad" type="number" />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Precio:
+      <input [(ngModel)]="producto.precio" class="form-control" placeholder="digite precio" type="number" />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Clasificacion:
+      <input [(ngModel)]="producto.clasificacion" class="form-control" placeholder="digite clasificacion" type="text" />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Fecha de vencimiento:
+      <input [(ngModel)]="producto.fechadevencimiento" class="form-control" placeholder="digite fecha de vencimiento" type="text" />
+    </label>
+  </div>
+
+  <div class="form-group">
+    <button (click)="add()" class="btn btn-primary">Agregar</button>
+  </div>
+  
+  <div>
+  
+  </div>
